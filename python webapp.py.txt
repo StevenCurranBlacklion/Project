@@ -1,0 +1,9 @@
+cd desktop
+cd project
+python webapp.py
+git init
+ctrl+c
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/StevenCurranGMIT/Project.git
+git push -u origin master
