@@ -12,13 +12,18 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $("#parisbutton").click(function(){
-        $.get("http://127.0.0.1:5984/emails/3109610f-ede6-432b-9e7c-6826bc830cee", function(data, status){
-		
-		$("#city").text(data.content);
+        $.get("/paris", function(data, status){
+		$("#city").text(data);
         });
     });
 });
-
+$(document).ready(function(){
+    $("#japanbutton").click(function(){
+        $.get("/japan", function(data, status){
+		$("#city").text(data);
+        });
+    });
+});
 
 </script>
    </head>
